@@ -1,3 +1,7 @@
-class BatteryChargeable:
+from abc import ABC, abstractmethod
+
+class BatteryChargeable(ABC):
+    @abstractmethod
     def charge_battery(self):
-        raise NotImplementedError("This method should be overridden in subclasses")
+        """Абстрактний метод для заряджання батареї"""
+        pass

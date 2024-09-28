@@ -8,3 +8,6 @@ class HybridCar(Car, BatteryChargeable):
 
     def start_engine(self):
         return f"{self._make} {self._model} uses both gasoline and electricity."
+
+    def charge_battery(self):
+        return f"Electric car's battery charged to {self.battery_size} kWh."
